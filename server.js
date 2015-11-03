@@ -18,6 +18,7 @@ if(c>=250){
 c=10;
 }
 var dat = c.toString()+"/"+d.toString()+"/"+f.toString();
+console.log(dat);
 	client.get("http://nodejs-ninjax.rhcloud.com/api/node/+dat+/ndns?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI1NjJhNzJkNGJmYTYxMTY3YTNkMmRiZWUiLCJsb2NhbCI6eyJwYXNzd29yZCI6IiQyYSQwOSRuV3NuSEl6UGVHdnlnYlBmWTUzeHhPTXZIU0g3T2xWYVM3d3FNdmxvek5oUmhjUEZQRHJkeSIsInVzZXJuYW1lIjoiYXBpIn19.jgploZQxiycZAC9nBFz_SkH6s1ou0WO6cPQN9g1F0Q5", function(data, response){
             // parsed response body as js object 
             console.log(data);
