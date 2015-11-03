@@ -1,5 +1,9 @@
 ﻿var rest = require('restler');
-
+var express = require('express');
+var app = express();
+app.get('/*', function(req,res){
+res.send("THis is The BOT ");
+});
  var c=0;
 var d = 6758;
 var f = 90;
@@ -27,5 +31,5 @@ rest.get("http://nodejs-ninjax.rhcloud.com/api/node/"+dat+"/ndns?token="+token).
   }
 });
 },2000);
-
+app.listen(process.env.OPENSHIFT_NODEJS_PORT);
  
